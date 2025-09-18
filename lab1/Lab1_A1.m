@@ -1,4 +1,4 @@
-f = @(t) exp(-t).*cos(2*pi*t);
+f = @(t) exp(-t).*cos(2.*pi.*t);
 t = (-2:2); 
 f(t);
 subplot(2,1,1)
@@ -7,7 +7,7 @@ title('Lab 1 A.1: Figure 1.46')
 xlabel('t'); 
 ylabel('f(t)'); grid;
 
-g = @(a) exp(-a).*cos(2*pi*a);
+g = @(a) exp(-a).*cos(2.*pi.*a);
 a = (-2:0.01:2); 
 g(a);
 subplot(2,1,2)

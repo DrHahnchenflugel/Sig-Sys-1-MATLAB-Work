@@ -2,7 +2,7 @@ clc;
 clf;
 clear;
 
-f = @(t) exp(-t).*cos(2*pi*t);
+f = @(t) exp(-t).*cos(2.*pi.*t);
 t = (-2:0.1:2); 
 
 g = @(t) exp(-t);
