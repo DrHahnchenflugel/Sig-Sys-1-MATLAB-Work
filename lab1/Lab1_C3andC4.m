@@ -38,3 +38,5 @@ grid;
 legend('a=1', 'a=3', 'a=5', 'a=7'); 
 
 hold off; 
+
+size(T) %Problem C.4
