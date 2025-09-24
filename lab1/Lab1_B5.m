@@ -29,6 +29,7 @@ plot(t, n_2(t));
 xlabel('t'); 
 ylabel('n_2(t) = n1(t + (1/2))');
 title('Lab 1 B.5: t vs. n_2(t)');
+legend('n_3(t)')
 
 % Create subplot - 1 row, 2 cols, position 2
 subplot(1,2,2);
@@ -38,3 +39,4 @@ plot(t, n_4(t));
 xlabel('t'); 
 ylabel('n_4(t) = n_3((1/2)*t)');
 title('Lab 1 B.5: t vs. n_4(t)');
+legend('n_4(t)')

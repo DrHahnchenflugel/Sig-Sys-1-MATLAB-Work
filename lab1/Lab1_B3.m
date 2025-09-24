@@ -30,6 +30,7 @@ plot(t, n_1(t));
 xlabel('t'); 
 ylabel('n_1(t) = n((1/2) t)');
 title('Lab 1 B.3: t vs. n_1(t)');
+legend('n_1(t)')
 
 %
 % Second window, 
@@ -45,3 +46,4 @@ plot(t, n_2(t));
 xlabel('t'); 
 ylabel('n_2(t) = n1(t + (1/2))');
 title('Lab 1 B.3: t vs. n_2(t)');
+legend('n_2(t)')

@@ -26,6 +26,7 @@ plot(t, r(t));
 xlabel('t'); 
 ylabel('r(t) = t * p(t)');
 title('Lab 1 B.2: t vs. r(t)');
+legend('r(t)')
 
 %
 % Second window, 
@@ -41,4 +42,5 @@ plot(t, n(t));
 xlabel('t'); 
 ylabel('n(t) = p(t) + p(-t+2)');
 title('Lab 1 B.2: t vs. n(t)');
+legend('n(t)')
 
