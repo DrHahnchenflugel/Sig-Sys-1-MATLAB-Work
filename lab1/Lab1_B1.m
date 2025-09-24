@@ -13,7 +13,6 @@ p = @(t) 1.0.* ((t>=0) & (t<1));
 t = (-1:0.01:2); 
 
 % Plot p(t) vs t
-figure;
 plot(t,p(t));
 
 % Set labels
