@@ -10,7 +10,7 @@ g = @(t) exp(-t);
 title('Lab 1 A.3: Comparision of A.2 and Figure 1.46')
 xlabel('t');
 ylabel('f(t)'); grid;
-legend('f(t)')
+legend('f(t), g(t)')
 
 %%%
 hold on

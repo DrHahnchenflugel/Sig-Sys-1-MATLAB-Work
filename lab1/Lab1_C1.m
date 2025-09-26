@@ -12,4 +12,5 @@ xlabel('t');
 ylabel('g(2t+1)'); 
 grid; %creates gridlines
 title('Lab 1 C.1')
+legend('g(2t+1)')
 

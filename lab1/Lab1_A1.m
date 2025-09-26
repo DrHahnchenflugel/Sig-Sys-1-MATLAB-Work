@@ -16,4 +16,4 @@ plot(a,g(a));
 title('Lab 1 A.1: Figure 1.47')
 xlabel('a');
 ylabel('g(a)'); grid;
-
+legend('g(a)')

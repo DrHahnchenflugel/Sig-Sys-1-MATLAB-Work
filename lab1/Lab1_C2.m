@@ -13,3 +13,4 @@ xlabel('t');
 ylabel('s(t)'); 
 grid; %creates gridline for plot
 title('Lab 1 C.2')
+legend('s(t)')
