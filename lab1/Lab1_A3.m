@@ -11,7 +11,6 @@ title('Lab 1 A.3: Comparision of A.2 and Figure 1.46')
 xlabel('t');
 ylabel('f(t)'); 
 grid;
-legend('f(t), g(t)')
 
 %%%
 hold on
@@ -20,5 +19,5 @@ f(t);
 plot(t,f(t), '*-g')
 g(t);
 plot(t,g(t), '*-r')
-
+legend('f(t)', 'g(t)')
 hold off
