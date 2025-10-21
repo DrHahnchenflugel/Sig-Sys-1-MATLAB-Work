@@ -22,3 +22,24 @@ char_poly = poly(lambda);
 
 % Set up time range
 t = [0:0.0005:0.1];
+
+% Set up u(t)
+u = @(t) 1.0.*(t>=0);
+
+% Find the lambdas
+l1 = lambda(1);
+l2 = lambda(2);
+
+% H(s) = Y/X = k/(s^2 + a1 s + a2) where k = -1/(R1 R3 C1 C2)
+k = -1/(R(1)*R(3)*C(1)*C(2));
+
+h = (k/(l1-l2)) * (exp(l1.*t) - exp(l2.*t)).*u(t);
+
+figure(1);
+plot(t,h)
+grid on
+xlabel('t')
+ylabel('h(t)')
+grid; %creates gridlines
+title('Lab 2 A.2')
+legend('h(t)')
