@@ -13,7 +13,7 @@ lambda = roots(A);
 
 % TO RUN, open COMMAND WINDOW and type {var} = Lab2_A3([1e4,1e4,1e4],[1e-9,1e-6])
 % SHOULD RETURN
-% lambda =
+% {var} =
 %
 %   -150.0 + 3158.7i
 %   -150.0 - 3158.7i
