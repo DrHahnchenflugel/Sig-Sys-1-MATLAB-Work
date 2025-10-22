@@ -1,3 +1,6 @@
+clf;
+clc;
+clear;
 figure (1)% Create figure window and make visible on screen
 u = @(t) 1.0*(t>=0);
 x = @(t) 1.5*sin(pi*t).*(u(t)-u(t-1));

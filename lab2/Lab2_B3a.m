@@ -1,5 +1,7 @@
-% Create figure window and make visible on screen
-% Let's make A = 1 and B = 2
+clf;
+clc;
+clear;
+figure (1)% Create figure window and make visible on screen
 A = 1; B = 2;
 u = @(t) 1.0*(t>=0);
 x = @(t) A*(u(t-4)-u(t-6));

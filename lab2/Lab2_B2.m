@@ -1,9 +1,12 @@
-% Create figure window and make visible on screen
+clf;
+clc;
+clear;
+figure (1)% Create figure window and make visible on screen
 u = @(t) 1.0*(t>=0);
-x = @(t) (u(t)-u(t-2));
+x = @(t) (u(t)- u(t-2));
 h = @(t) (t+1).*(u(t+1)-u(t));
-dtau = 0.005; tau = -1:dtau:4;
-ti = 0; tvec = -.25:.1:3.75;
+dtau = 0.005; tau = -3:dtau:4;
+ti = 0; tvec = -1.:.1:3.75;
 y = NaN*zeros(1,length(tvec)); % Pre-allocate memory
 for t = tvec,
    ti = ti+1; % Time index
@@ -20,6 +23,6 @@ for t = tvec,
    c = get(gca,'children'); set(gca,'children',[c(2);c(3);c(4);c(1)]);
    subplot(2,1,2),plot(tvec,y,"r",tvec(ti),y(ti),"ok");
    xlabel("t"); ylabel("y(t) = \int h(\tau)x(t-\tau) d\tau");
-   axis([tau(1) tau(end) -1.0 2.0]); grid;
+   axis([tau(1) tau(end) -2.0 2.0]); grid;
    pause;
 end
