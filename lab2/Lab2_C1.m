@@ -22,11 +22,11 @@ grid on;
 xlabel('t');
 ylabel('h(t)');
 title('Lab 2 C.1')
-plot(t,h1(t),'LineWidth',3);
-plot(t,h2(t),'LineWidth',3);
-plot(t,h3(t),'LineWidth',3);
-plot(t,h4(t),'LineWidth',3);
-xlim([0 5]);
+plot(t,h1(t),'LineWidth',3)
+plot(t,h2(t),'LineWidth',3)
+plot(t,h3(t),'LineWidth',3)
+plot(t,h4(t),'LineWidth',3)
+xlim([-1 5]);
 legend('h1(t)=e^(^t^/^5^)u(t)','h2(t)=4e^(^-^t^/^5^)u(t)',
        'h3(t)=4e^(^-^t^)u(t)','h4(t)=4(e^(^-^t^/^5^)-e^(^-^t^))u(t)',
        'FontSize', 14);
