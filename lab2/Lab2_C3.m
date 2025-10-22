@@ -26,10 +26,10 @@ tvec = 0:.1:20;  % modified to [0, 0.1, 20]
 
 % Define an array to store h1..h4 for code brevity
 hs    = {h1, h2, h3, h4};
-hname = {'h1(t)=e^(^t^/^5^)(u(t)-u(t-20))',
-          'h2(t)=4e^(^-^t^/^5^)(u(t)-u(t-20))',
-          'h3(t)=4e^(^-^t^)(u(t)-u(t-20))',
-          'h4(t)=4(e^(^-^t^/^5^)-e^(^-^t^))(u(t)-u(t-20))'};
+hname = {'h1(t)=e^(t/5)(u(t)-u(t-20))',
+          'h2(t)=4e^(-t/5)(u(t)-u(t-20))',
+          'h3(t)=4e^(-t)(u(t)-u(t-20))',
+          'h4(t)=4(e^(-t/5^)-e^(-t))(u(t)-u(t-20))'};
 htitle = {
             'h1(\tau) [solid], x(t-\tau) [dashed], h1(\tau)x(t-\tau) [gray]',
             'h2(\tau) [solid], x(t-\tau) [dashed], h2(\tau)x(t-\tau) [gray]',
