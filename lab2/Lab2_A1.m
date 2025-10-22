@@ -19,6 +19,6 @@ lambda = roots(A);
 % Generate characteristic polynomial
 % p_1 x^n + p_2 x^(n-1) + p_3 x^(n-2)
 % In our case, x+1 constants = 3, so x=2
-% Resulting in p_1 x^2 + p_2 x + p_1.
+% Resulting in p_1 x^2 + p_2 x + p_3.
 % The function below displays p_n V n
 char_poly = poly(lambda)
