@@ -24,5 +24,5 @@ for t = tvec,
    subplot(2,1,2),plot(tvec,y,"r",tvec(ti),y(ti),"ok");
    xlabel("t"); ylabel("y(t) = \int h(\tau)x(t-\tau) d\tau");
    axis([tau(1) tau(end) -2.0 2.0]); grid;
-   pause;
+   drawnow;
 end
