@@ -47,7 +47,6 @@ ylabel('|D_n|');
 title('x_2 magnitude (-5:5)');
 subplot(3,2,4);
 ph = angle(D_n_2_a);
-ph(n_a==0) = 0; % hardcode phase at 0 = 0
 stem(n_a,ph,'.k');
 grid on;
 xlabel('n');
@@ -61,7 +60,6 @@ ylabel('|D_n|');
 title('x_3 magnitude (-5:5)');
 subplot(3,2,6);
 ph = angle(D_n_3_a);
-ph(n_a==0) = 0; % hardcode phase at 0 = 0
 stem(n_a,ph,'.k');
 grid on;
 xlabel('n');
@@ -91,7 +89,6 @@ ylabel('|D_n|');
 title('x_2 magnitude (-20:20)');
 subplot(3,2,4);
 ph = angle(D_n_2_b);
-ph(n_b==0) = 0; % hardcode phase at 0 = 0
 stem(n_b,ph,'.k');
 grid on;
 xlabel('n');
@@ -105,7 +102,6 @@ ylabel('|D_n|');
 title('x_3 magnitude (-20:20)');
 subplot(3,2,6);
 ph = angle(D_n_3_b);
-ph(n_b==0) = 0; % hardcode phase at 0 = 0
 stem(n_b,ph,'.k');
 grid on;
 xlabel('n');
@@ -135,7 +131,6 @@ ylabel('|D_n|');
 title('x_2 magnitude (-50:50)');
 subplot(3,2,4);
 ph = angle(D_n_2_c);
-ph(n_c==0) = 0; % hardcode phase at 0 = 0
 stem(n_c,ph,'.k');
 grid on;
 xlabel('n');
@@ -149,7 +144,6 @@ ylabel('|D_n|');
 title('x_3 magnitude (-50:50)');
 subplot(3,2,6);
 ph = angle(D_n_3_c);
-ph(n_c==0) = 0; % hardcode phase at 0 = 0
 stem(n_c,ph,'.k');
 grid on;
 xlabel('n');
@@ -179,7 +173,6 @@ ylabel('|D_n|');
 title('x_2 magnitude (-500:500)');
 subplot(3,2,4);
 ph = angle(D_n_2_d);
-ph(n_d==0) = 0; % hardcode phase at 0 = 0
 stem(n_d,ph,'.k');
 grid on;
 xlabel('n');
@@ -193,7 +186,6 @@ ylabel('|D_n|');
 title('x_3 magnitude (-500:500)');
 subplot(3,2,6);
 ph = angle(D_n_3_d);
-ph(n_d==0) = 0; % hardcode phase at 0 = 0
 stem(n_d,ph,'.k');
 grid on;
 xlabel('n');
