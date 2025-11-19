@@ -1,18 +1,20 @@
 function [ output_args ] = MagSpect( x )
 % MAGSPECT ... Utility function to simplify plotting the magnitude spectrum.
-% 
-% MAGSPECT(X) plots the double-sided magnitude spectrum of X using 
-%       1024-point FFT; the frequency axis labels are generated based 
+%
+% MAGSPECT(X) plots the double-sided magnitude spectrum of X using
+%       1024-point FFT; the frequency axis labels are generated based
 %       on the sampling frequency Fs = 32 kHz.  Spectral magnitude
 %       values are plotted in [dB].
 
-%	AUTHOR  : M. Zeytinoglu 
+%	AUTHOR  : M. Zeytinoglu
 %             Department of Electrical & Computer Engineering
 %             Ryerson University
 %             Toronto, Ontario, CANADA
 %
+% MODIFIED: V. Lelikov (to function without need for signal package in octave)
+%
 %	DATE    : October 2013.
-%	VERSION : 1.0
+%	VERSION : 1.2
 
 %==========================================================================
 % Default values
@@ -26,19 +28,20 @@ Nfft = 1024;    % default FFT size
 ff = [ -(Nfft/2) : 1 : (Nfft/2)-1 ] * (Fs/Nfft);
 
 %==========================================================================
-% Compute the spectrum of x(t) using Nfft-point FFT 
+% Compute the spectrum of x(t) using Nfft-point FFT
 %==========================================================================
 Xspect = fft( x, Nfft );
 
 %==========================================================================
-% plot the magnitude spectrum 
+% plot the magnitude spectrum
 %==========================================================================
-plot( ff, db( abs( fftshift(Xspect) ) ) );
+db_value = 20 * log10(abs( fftshift(Xspect))); % db function undefined
+plot( ff,  db_value) ;
 
 set(gca,'XLim',[-Fs/2 Fs/2]);
     xlabel('Frequency [Hz]'); ...
     ylabel('Magnitude [dB]'); ...
-    grid on; 
+    grid on;
 
 end
 
