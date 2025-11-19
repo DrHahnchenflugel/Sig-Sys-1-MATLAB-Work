@@ -4,14 +4,13 @@ clear;
 
 N = 100;
 PulseWidth = 10;
-t = (0:1:(N-1));
+t = [0:1:(N-1)];
 x = [ones(1, PulseWidth), zeros(1, N - PulseWidth)];
 f = (-(N/2):1:(N/2)-1)*(1/N);
 
 Xf = fft(x);
 
 omega0 = pi/3;
-
 
 w_plus = x .* exp(1i * omega0 * t); % '1i' is the imaginary unit 'j'
 Wf_plus = fft(w_plus);
